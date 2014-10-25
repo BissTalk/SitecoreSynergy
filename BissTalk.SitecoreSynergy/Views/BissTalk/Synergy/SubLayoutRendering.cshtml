@@ -1,0 +1,12 @@
+﻿@using BissTalk.SitecoreSynergy
+@using Sitecore.Mvc;
+@inherits System.Web.Mvc.WebViewPage
+              
+@{
+    var path = Html.Sitecore().CurrentRendering.Parameters["sublayout-rendering-path"];
+}
+    
+@if (!String.IsNullOrEmpty(path))
+{
+    @Html.RenderSitecoreSubLayout(path, Html.Sitecore().CurrentRendering.DataSource, Html.Sitecore().CurrentRendering.Parameters)
+}

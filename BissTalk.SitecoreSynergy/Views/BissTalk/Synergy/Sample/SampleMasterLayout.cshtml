@@ -1,0 +1,23 @@
+﻿@using Sitecore.Mvc;
+@using Sitecore.Web
+@inherits System.Web.Mvc.WebViewPage
+@{
+    var metaTagCollection = WebUtil.ParseUrlParameters(Html.Sitecore().CurrentItem["MetaTags"]);
+}              
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>@Html.Sitecore().CurrentItem["PageTitle"]</title>
+        <meta name="description" content="@Html.Sitecore().CurrentItem["PageDescription"]">
+    @foreach (var name in metaTagCollection.AllKeys)
+    {
+        <meta name="@name" content="@metaTagCollection[name]" />
+    }
+    </head>
+    <body>
+        @Html.Sitecore().Placeholder("main")
+    </body>
+</html>
