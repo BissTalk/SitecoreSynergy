@@ -25,8 +25,8 @@
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>.\bin\Debug\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
-    <SitecoreDeployFolder>C:\inetpub\Demo123\Website</SitecoreDeployFolder>
-    <SitecoreWebUrl>http://Demo123</SitecoreWebUrl>
+    <SitecoreDeployFolder>C:\inetpub\Demo\Website</SitecoreDeployFolder>
+    <SitecoreWebUrl>http://Demo</SitecoreWebUrl>
     <SitecoreAccessGuid>7cb74748-103d-460e-b0db-f397758c3636</SitecoreAccessGuid>
     <InstallSitecoreConnector>True</InstallSitecoreConnector>
     <PackageName>BissTalk Synergy</PackageName>
@@ -38,6 +38,7 @@
     <PackageReadme>After installing this package you will have the ability</PackageReadme>
     <PackageVersion>0.1</PackageVersion>
     <SitecoreAssemblyPath>..\Libs</SitecoreAssemblyPath>
+    <DisableFileDeployment>False</DisableFileDeployment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <DebugSymbols>false</DebugSymbols>
