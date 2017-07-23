@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "SynergyMaster", "SynergyMaster\SynergyMaster.scproj", "{56178B5C-D789-441F-A909-BCAABFB1C51B}"
 EndProject
@@ -10,11 +10,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{66E13A
 		.nuget\NuGet.Config = .nuget\NuGet.Config
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{D9307987-5DDB-4179-8276-D82438BFEFF8}"
-	ProjectSection(SolutionItems) = preProject
-		Libs\README.txt = Libs\README.txt
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BissTalk.SitecoreSynergy", "BissTalk.SitecoreSynergy\BissTalk.SitecoreSynergy.csproj", "{B7C16FE1-F722-4D35-85F3-BDE20B57F958}"
